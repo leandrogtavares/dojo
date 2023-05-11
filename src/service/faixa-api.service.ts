@@ -4,7 +4,7 @@ export class FaixaApiService {
     private faixas: Faixa[]
 
     constructor() {
-        this.faixas = JSON.parse(localStorage.getItem('faixas'))
+        this.faixas = JSON.parse(localStorage.getItem('faixas')) ?? []
     }
 
     getFaixas(): Faixa[] {

@@ -1,5 +1,5 @@
-import { Faixa } from "./model/faixa"
-import { FaixaApiService } from "./service/faixa-api.service"
+import { Faixa } from "./model/faixa.js"
+import { FaixaApiService } from "./service/faixa-api.service.js"
 
 const inputFaixa = document.querySelector('#iptFaixa') as HTMLInputElement
 const buttonAdicionar: HTMLButtonElement = document.querySelector('#btnAdicionar')
@@ -19,7 +19,7 @@ function handleAdicionar() {
     selectFaixa.appendChild(option)
 
     faixaApiService.addFaixa(faixa)
-    console.log(faixaApiService.getFaixas())
+    console.log('Faixas armazenadas: ', faixaApiService.getFaixas())
 }
 
 console.log('iniciando programa')

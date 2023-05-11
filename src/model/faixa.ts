@@ -1,4 +1,4 @@
-import { InvalidArgumentValueException } from "../exception/exception.exception";
+import { InvalidArgumentValueException } from "../exception/exception.exception.js";
 import { Golpe } from "./golpe";
 import { Sequencia } from "./sequencia";
 
