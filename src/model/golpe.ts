@@ -1,6 +1,7 @@
 export class Golpe {
     id: number
-    nome: string
-    descricao: string
-    implementacao: string
+
+    constructor(public nome: string, public implementacao?: string, public descricao?: string) {
+        this.id = Math.floor(Math.random() * 100000000)
+    }
 }

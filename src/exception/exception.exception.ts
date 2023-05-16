@@ -3,3 +3,5 @@ export class Exception {
 }
 
 export class InvalidArgumentValueException extends Exception { }
+
+// export class RepeatedValueException extends Exception { }
